@@ -32,7 +32,7 @@ bondiSurfReport.controller('bondiSurfReportCtrl', ['$scope', '$http',
     		jsonpCallback: 'callback',
 	    	type: 'GET',
 	    	success: function (data) {			    	
-		    	var html = "<div><table class='table table-bordered'>";
+		    	var html = "<div><table class='table blue-lines'>";
 		    	//Construct table heading displaying dates
 		    	html += "<tr><th>Time</th><th>"+displayToday+"</th><th>"+displayTomorrow+"</th><th>"+displayDayAfter+"</th><th>"+displayLastDay+"</th></tr>";
 		    	

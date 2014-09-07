@@ -1,18 +1,12 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300');
-@import url('http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic');
-body {	
-	background: url('../images/bondix938x704.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	color:#fff;
-  	background-color:#333;
-  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+body { padding-bottom: 70px; }
+
+.navbar-blue{
+	background-color: #fff;
+	color: #3572b0;
 }
 
-a:link, a:visited {
-	color:#eee;
+.footer{
+	color: #707070;
 }
 
 .block {
@@ -22,54 +16,10 @@ a:link, a:visited {
   	padding: 10px 10px 10px 10px;
 }
 
-.block-sm {
-    height:180px;
-}
-
-.btn-flat {
-  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
-	border-radius:0px;
-  	border-width:0;
-  	background-image:none;
-  	padding:16px;
-  	margin:0 auto;
-  	margin-top:15px;
-  	width:70%;
-    font-size:20pt;
-}
-
-/* mini carousel */
-.carousel-inner img {
-	width:100%;
-  	height:100%;
-}
-
-#myCarousel {
-	font-size:90%;
-}
-
-.carousel-controls-mini {
-	margin-left:42%;
-}
-
-.carousel-controls-mini > a {
-	border:1px solid #eee;
-  	margin:1px;
-  	width:20px;
-    display:block;
-  	float:left;
-    text-align:center;
-}
-
-#carousel-bounding-box {
-  margin:0 auto;
-  width:300px;
-}
-
 h1 {
-        font-family: 'Tangerine', serif;
-        font-size: 60px;        
-      }
+    font-family: 'Tangerine', serif;
+    font-size: 40px;        
+}
 
 h4,h3{
 	display:inline;
@@ -86,25 +36,6 @@ h4,h3{
 	padding-right: 2px;
 }
 
-.surficon{
-	max-height:48px;
-	max-width:48px; 
-	display:inline;
-	background-image: url('../images/surficon.png'); 
-	background-repeat: no-repeat; 
-	background-position: center; 
-}
-
-.surficon{
-	max-height:48px;
-	max-width:48px; 
-	display:inline;
-	background-image: url('../images/windicon.png'); 
-	background-repeat: no-repeat; 
-	background-position: center; 
-}
-
 table .nolines tr td{
 	border: none;
 }
-
