@@ -17,6 +17,7 @@ a:link, a:visited {
 .block {
 	background-color:rgba(0,0,0,0.5);
     height:100%;
+    width:100%;
   	padding: 10px 10px 10px 10px;
 }
 
@@ -64,4 +65,9 @@ a:link, a:visited {
   width:300px;
 }
 
+h4,h3{
+	display:inline;
+}
+
+.table{margin-bottom:0px;}
 
