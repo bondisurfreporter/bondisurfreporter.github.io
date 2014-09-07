@@ -137,7 +137,7 @@ bondiSurfReport.controller('bondiSurfReportCtrl', ['$scope', '$http',
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts "+lastDayData.swell_direction_compass_point+"</h3> "+lastDayData.swell_direction_degrees+"&deg; @ " +lastDayData.swell_period_seconds+"s</td></tr><tr><td><h3>"+lastDayData.wind_speed_knots+"kn "+lastDayData.wind_direction_compass_point+"</h3> "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts "+lastDayData.swell_direction_compass_point+"</h3> "+lastDayData.swell_direction_degrees+"&deg; @ " +lastDayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h3>"+lastDayData.wind_speed_knots+"kn "+lastDayData.wind_direction_compass_point+"</h3> "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	html += "</tr>";
 		    	//10:00am ends here
