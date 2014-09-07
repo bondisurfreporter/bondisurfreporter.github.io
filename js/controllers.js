@@ -39,7 +39,7 @@ bondiSurfReport.controller('bondiSurfReportCtrl', ['$scope', '$http',
 		    	//4:00am starts here
 		    	html += "<tr>"; 
 		    	html += "<th style='vertical-align:center;'>4:00am</th>";
-		    	html += "<td><table class='table table-hover'><tr><th>Swell<br /><br /></th></tr><tr><th>Wind<br /><br /></th></tr></table></td>";
+		    	html += "<td><table class='table table-hover'><tr><th><i class='flaticon-surfer'></i></th></tr><tr><th><i class='flaticon-wind6'></i></th></tr></table></td>";
 		    	var hour = "4am";
 		    	var todayData = searchDayAndTime(data, today,hour);
 		    	if(todayData == null){

@@ -1,4 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300');
+@import url('http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic');
 body {	
 	background: url('../images/bondix938x704.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -64,6 +65,12 @@ a:link, a:visited {
   margin:0 auto;
   width:300px;
 }
+
+h1 {
+        font-family: 'Tangerine', serif;
+        font-size: 60px;
+        text-shadow: 4px 4px 4px #aaa;
+      }
 
 h4,h3{
 	display:inline;
