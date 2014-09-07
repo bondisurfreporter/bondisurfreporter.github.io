@@ -39,14 +39,14 @@ bondiSurfReport.controller('bondiSurfReportCtrl', ['$scope', '$http',
 		    	//4:00am starts here
 		    	html += "<tr>"; 
 		    	html += "<th style='vertical-align:center;'>4:00am</th>";
-		    	html += "<td><table class='table table-hover'><tr><th><i class='flaticon-surfer'></i></th></tr><tr><th><i class='flaticon-wind6'></i></th></tr></table></td>";
+		    	html += "<td><table class='table table-hover'><tr><th><span class='surficon'></span></th></tr><tr><th><span class='windicon'></span></th></tr></table></td>";
 		    	var hour = "4am";
 		    	var todayData = searchDayAndTime(data, today,hour);
 		    	if(todayData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><h3>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg;<br />@ " +todayData.swell_period_seconds+"s</td></tr><tr><td><h3>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover'><tr><td><img src='..images/surficon.png' class='iconimg'/><h3>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg;@ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='..images/windicon.png' class='iconimg'/><h3>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var tomorrowData = searchDayAndTime(data, tomorrow,hour);
 		    	if(tomorrowData == null){

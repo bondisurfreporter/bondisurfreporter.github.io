@@ -78,3 +78,29 @@ h4,h3{
 
 .table{margin-bottom:0px;}
 
+.iconimg{
+	min-height: 40px;
+	min-width: 40px;
+	max-height: 40px;
+	max-width: 40px;
+	padding-right: 2px;
+}
+
+.surficon{
+	max-height:48px;
+	max-width:48px; 
+	display:inline;
+	background-image: url('../images/surficon.png'); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+}
+
+.surficon{
+	max-height:48px;
+	max-width:48px; 
+	display:inline;
+	background-image: url('../images/windicon.png'); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+}
+
