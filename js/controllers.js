@@ -46,7 +46,7 @@ bondiSurfReport.controller('bondiSurfReportCtrl', ['$scope', '$http',
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='..images/surficon.png' class='iconimg'/><h3>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg;@ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='..images/windicon.png' class='iconimg'/><h3>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h3>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg;@ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h3>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var tomorrowData = searchDayAndTime(data, tomorrow,hour);
 		    	if(tomorrowData == null){
