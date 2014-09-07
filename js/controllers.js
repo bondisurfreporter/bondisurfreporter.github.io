@@ -45,28 +45,28 @@ bondiSurfReport.controller('bondiSurfReportCtrl', ['$scope', '$http',
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+todayData.swell_height_metres+"mts @ "+todayData.swell_period_seconds+"s</h4> "+todayData.swell_direction_compass_point+ " " +todayData.swell_direction_degrees+"&deg;</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+todayData.wind_speed_knots+"kn</h4> "+todayData.wind_direction_compass_point+" "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+todayData.swell_height_metres+"mts @ "+todayData.swell_period_seconds+"s</h4> "+todayData.swell_direction_compass_point+ " " +todayData.swell_direction_degrees+"&deg;</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+todayData.wind_speed_knots+"kn</h4> "+todayData.wind_direction_compass_point+" "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var tomorrowData = searchDayAndTime(data, tomorrow,hour);
 		    	if(tomorrowData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-			    	html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+tomorrowData.swell_height_metres+"mts @ "+tomorrowData.swell_period_seconds+"s</h4> "+tomorrowData.swell_direction_compass_point+" " +tomorrowData.swell_direction_degrees+"&deg;</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+tomorrowData.wind_speed_knots+"kn</h4> "+tomorrowData.wind_direction_compass_point+" "+tomorrowData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+			    	html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+tomorrowData.swell_height_metres+"mts @ "+tomorrowData.swell_period_seconds+"s</h4> "+tomorrowData.swell_direction_compass_point+" " +tomorrowData.swell_direction_degrees+"&deg;</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+tomorrowData.wind_speed_knots+"kn</h4> "+tomorrowData.wind_direction_compass_point+" "+tomorrowData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var dayAfterData = searchDayAndTime(data, dayAfter,hour);
 		    	if(dayAfterData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+dayAfterData.swell_height_metres+"mts @ "+dayAfterData.swell_period_seconds+"s</h4> "+dayAfterData.swell_direction_compass_point+" " +dayAfterData.swell_direction_degrees+"&deg;</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+dayAfterData.wind_speed_knots+"kn</h4> "+dayAfterData.wind_direction_compass_point+" "+dayAfterData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+dayAfterData.swell_height_metres+"mts @ "+dayAfterData.swell_period_seconds+"s</h4> "+dayAfterData.swell_direction_compass_point+" " +dayAfterData.swell_direction_degrees+"&deg;</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+dayAfterData.wind_speed_knots+"kn</h4> "+dayAfterData.wind_direction_compass_point+" "+dayAfterData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var lastDayData = searchDayAndTime(data, lastDay,hour);
 		    	if(lastDayData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts @ "+lastDayData.swell_period_seconds+"s</h4> "+lastDayData.swell_direction_compass_point+" " +lastDayData.swell_direction_degrees+"&deg;</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+lastDayData.wind_speed_knots+"kn</h4> "+lastDayData.wind_direction_compass_point+" "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts @ "+lastDayData.swell_period_seconds+"s</h4> "+lastDayData.swell_direction_compass_point+" " +lastDayData.swell_direction_degrees+"&deg;</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+lastDayData.wind_speed_knots+"kn</h4> "+lastDayData.wind_direction_compass_point+" "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	html += "</tr>";
 		    	//4:00am ends here
@@ -80,28 +80,28 @@ bondiSurfReport.controller('bondiSurfReportCtrl', ['$scope', '$http',
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg; @ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg; @ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var tomorrowData = searchDayAndTime(data, tomorrow,hour);
 		    	if(tomorrowData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-			    	html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+tomorrowData.swell_height_metres+"mts "+tomorrowData.swell_direction_compass_point+"</h3> "+tomorrowData.swell_direction_degrees+"&deg; @ " +tomorrowData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+tomorrowData.wind_speed_knots+"kn "+tomorrowData.wind_direction_compass_point+"</h3> "+tomorrowData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+			    	html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+tomorrowData.swell_height_metres+"mts "+tomorrowData.swell_direction_compass_point+"</h3> "+tomorrowData.swell_direction_degrees+"&deg; @ " +tomorrowData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+tomorrowData.wind_speed_knots+"kn "+tomorrowData.wind_direction_compass_point+"</h3> "+tomorrowData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var dayAfterData = searchDayAndTime(data, dayAfter,hour);
 		    	if(dayAfterData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+dayAfterData.swell_height_metres+"mts "+dayAfterData.swell_direction_compass_point+"</h3> "+dayAfterData.swell_direction_degrees+"&deg; @ " +dayAfterData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+dayAfterData.wind_speed_knots+"kn "+dayAfterData.wind_direction_compass_point+"</h3> "+dayAfterData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+dayAfterData.swell_height_metres+"mts "+dayAfterData.swell_direction_compass_point+"</h3> "+dayAfterData.swell_direction_degrees+"&deg; @ " +dayAfterData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+dayAfterData.wind_speed_knots+"kn "+dayAfterData.wind_direction_compass_point+"</h3> "+dayAfterData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var lastDayData = searchDayAndTime(data, lastDay,hour);
 		    	if(lastDayData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts "+lastDayData.swell_direction_compass_point+"</h3> "+lastDayData.swell_direction_degrees+"&deg; @ " +lastDayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+lastDayData.wind_speed_knots+"kn "+lastDayData.wind_direction_compass_point+"</h3> "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts "+lastDayData.swell_direction_compass_point+"</h3> "+lastDayData.swell_direction_degrees+"&deg; @ " +lastDayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+lastDayData.wind_speed_knots+"kn "+lastDayData.wind_direction_compass_point+"</h3> "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	html += "</tr>";
 		    	//7:00am ends here
@@ -116,28 +116,28 @@ bondiSurfReport.controller('bondiSurfReportCtrl', ['$scope', '$http',
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg; @ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg; @ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var tomorrowData = searchDayAndTime(data, tomorrow,hour);
 		    	if(tomorrowData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-			    	html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+tomorrowData.swell_height_metres+"mts "+tomorrowData.swell_direction_compass_point+"</h3> "+tomorrowData.swell_direction_degrees+"&deg; @ " +tomorrowData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+tomorrowData.wind_speed_knots+"kn "+tomorrowData.wind_direction_compass_point+"</h3> "+tomorrowData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+			    	html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+tomorrowData.swell_height_metres+"mts "+tomorrowData.swell_direction_compass_point+"</h3> "+tomorrowData.swell_direction_degrees+"&deg; @ " +tomorrowData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+tomorrowData.wind_speed_knots+"kn "+tomorrowData.wind_direction_compass_point+"</h3> "+tomorrowData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var dayAfterData = searchDayAndTime(data, dayAfter,hour);
 		    	if(dayAfterData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+dayAfterData.swell_height_metres+"mts "+dayAfterData.swell_direction_compass_point+"</h3> "+dayAfterData.swell_direction_degrees+"&deg; @ " +dayAfterData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+dayAfterData.wind_speed_knots+"kn "+dayAfterData.wind_direction_compass_point+"</h3> "+dayAfterData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+dayAfterData.swell_height_metres+"mts "+dayAfterData.swell_direction_compass_point+"</h3> "+dayAfterData.swell_direction_degrees+"&deg; @ " +dayAfterData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+dayAfterData.wind_speed_knots+"kn "+dayAfterData.wind_direction_compass_point+"</h3> "+dayAfterData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var lastDayData = searchDayAndTime(data, lastDay,hour);
 		    	if(lastDayData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts "+lastDayData.swell_direction_compass_point+"</h3> "+lastDayData.swell_direction_degrees+"&deg; @ " +lastDayData.swell_period_seconds+"s</td></tr><tr><td><h3>"+lastDayData.wind_speed_knots+"kn "+lastDayData.wind_direction_compass_point+"</h3> "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts "+lastDayData.swell_direction_compass_point+"</h3> "+lastDayData.swell_direction_degrees+"&deg; @ " +lastDayData.swell_period_seconds+"s</td></tr><tr><td><h3>"+lastDayData.wind_speed_knots+"kn "+lastDayData.wind_direction_compass_point+"</h3> "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	html += "</tr>";
 		    	//10:00am ends here
@@ -151,28 +151,28 @@ bondiSurfReport.controller('bondiSurfReportCtrl', ['$scope', '$http',
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg; @ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg; @ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var tomorrowData = searchDayAndTime(data, tomorrow,hour);
 		    	if(tomorrowData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-			    	html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+tomorrowData.swell_height_metres+"mts "+tomorrowData.swell_direction_compass_point+"</h3> "+tomorrowData.swell_direction_degrees+"&deg; @ " +tomorrowData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+tomorrowData.wind_speed_knots+"kn "+tomorrowData.wind_direction_compass_point+"</h3> "+tomorrowData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+			    	html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+tomorrowData.swell_height_metres+"mts "+tomorrowData.swell_direction_compass_point+"</h3> "+tomorrowData.swell_direction_degrees+"&deg; @ " +tomorrowData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+tomorrowData.wind_speed_knots+"kn "+tomorrowData.wind_direction_compass_point+"</h3> "+tomorrowData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var dayAfterData = searchDayAndTime(data, dayAfter,hour);
 		    	if(dayAfterData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+dayAfterData.swell_height_metres+"mts "+dayAfterData.swell_direction_compass_point+"</h3> "+dayAfterData.swell_direction_degrees+"&deg; @ " +dayAfterData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+dayAfterData.wind_speed_knots+"kn "+dayAfterData.wind_direction_compass_point+"</h3> "+dayAfterData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+dayAfterData.swell_height_metres+"mts "+dayAfterData.swell_direction_compass_point+"</h3> "+dayAfterData.swell_direction_degrees+"&deg; @ " +dayAfterData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+dayAfterData.wind_speed_knots+"kn "+dayAfterData.wind_direction_compass_point+"</h3> "+dayAfterData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var lastDayData = searchDayAndTime(data, lastDay,hour);
 		    	if(lastDayData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts "+lastDayData.swell_direction_compass_point+"</h3> "+lastDayData.swell_direction_degrees+"&deg; @ " +lastDayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+lastDayData.wind_speed_knots+"kn "+lastDayData.wind_direction_compass_point+"</h3> "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts "+lastDayData.swell_direction_compass_point+"</h3> "+lastDayData.swell_direction_degrees+"&deg; @ " +lastDayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+lastDayData.wind_speed_knots+"kn "+lastDayData.wind_direction_compass_point+"</h3> "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	html += "</tr>";
 		    	//1:00pm ends here
@@ -186,28 +186,28 @@ bondiSurfReport.controller('bondiSurfReportCtrl', ['$scope', '$http',
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg; @ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+todayData.swell_height_metres+"mts "+todayData.swell_direction_compass_point+"</h3> "+todayData.swell_direction_degrees+"&deg; @ " +todayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+todayData.wind_speed_knots+"kn "+todayData.wind_direction_compass_point+"</h3> "+todayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var tomorrowData = searchDayAndTime(data, tomorrow,hour);
 		    	if(tomorrowData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-			    	html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+tomorrowData.swell_height_metres+"mts "+tomorrowData.swell_direction_compass_point+"</h3> "+tomorrowData.swell_direction_degrees+"&deg; @ " +tomorrowData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+tomorrowData.wind_speed_knots+"kn "+tomorrowData.wind_direction_compass_point+"</h3> "+tomorrowData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+			    	html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+tomorrowData.swell_height_metres+"mts "+tomorrowData.swell_direction_compass_point+"</h3> "+tomorrowData.swell_direction_degrees+"&deg; @ " +tomorrowData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+tomorrowData.wind_speed_knots+"kn "+tomorrowData.wind_direction_compass_point+"</h3> "+tomorrowData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var dayAfterData = searchDayAndTime(data, dayAfter,hour);
 		    	if(dayAfterData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+dayAfterData.swell_height_metres+"mts "+dayAfterData.swell_direction_compass_point+"</h3> "+dayAfterData.swell_direction_degrees+"&deg; @ " +dayAfterData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+dayAfterData.wind_speed_knots+"kn "+dayAfterData.wind_direction_compass_point+"</h3> "+dayAfterData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+dayAfterData.swell_height_metres+"mts "+dayAfterData.swell_direction_compass_point+"</h3> "+dayAfterData.swell_direction_degrees+"&deg; @ " +dayAfterData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+dayAfterData.wind_speed_knots+"kn "+dayAfterData.wind_direction_compass_point+"</h3> "+dayAfterData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	var lastDayData = searchDayAndTime(data, lastDay,hour);
 		    	if(lastDayData == null){
 		    		html+= "<td>No data</td>";
 		    	}
 		    	else{
-		    		html+= "<td><table class='table table-hover'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts "+lastDayData.swell_direction_compass_point+"</h3> "+lastDayData.swell_direction_degrees+"&deg; @ " +lastDayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+lastDayData.wind_speed_knots+"kn "+lastDayData.wind_direction_compass_point+"</h3> "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
+		    		html+= "<td><table class='table table-hover nolines'><tr><td><img src='../images/surficon.png' class='iconimg'/><h4>"+lastDayData.swell_height_metres+"mts "+lastDayData.swell_direction_compass_point+"</h3> "+lastDayData.swell_direction_degrees+"&deg; @ " +lastDayData.swell_period_seconds+"s</td></tr><tr><td><img src='../images/windicon.png' class='iconimg'/><h4>"+lastDayData.wind_speed_knots+"kn "+lastDayData.wind_direction_compass_point+"</h3> "+lastDayData.wind_direction_degrees+"&deg;</td></tr></table></td>";
 		    	}
 		    	html += "</tr>";
 		    	//4:00pm ends here

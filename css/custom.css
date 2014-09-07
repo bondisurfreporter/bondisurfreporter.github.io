@@ -104,3 +104,7 @@ h4,h3{
 	background-position: center; 
 }
 
+table .nolines tr td{
+	border: none;
+}
+
