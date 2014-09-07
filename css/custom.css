@@ -15,7 +15,7 @@ a:link, a:visited {
 }
 
 .block {
-	background-color:rgba(0,0,0,0.2);
+	background-color:rgba(0,0,0,0.5);
     height:100%;
   	padding: 10px 10px 10px 10px;
 }
